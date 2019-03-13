@@ -2,3 +2,4 @@
 Snakemake linguist-language=python
 *.R linguist-language=R
 *.sh linguist-language=shell
+*.md linguist-language=markdown
