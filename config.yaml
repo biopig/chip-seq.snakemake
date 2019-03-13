@@ -1,0 +1,40 @@
+########################################################
+# this is the config file of snakemake for chip-seq analysis, use it before, your should install software: trimmomatic, bowtie2, samtools, bamtools, GEM, 
+# write by zhanweimin, 630950832@qq.com
+# 2019.3.13
+# I will update it after a half year
+########################################################
+
+
+#the trimmomatic software, it's to filter fastq file
+Trimmomatic: /home/zhan/biosoft/trimmomatic/Trimmomatic-0.38/trimmomatic-0.38.jar
+
+#trimmomatic sofware's adapt fasta
+Truseq_fa: /home/zhan/biosoft/trimmomatic/Trimmomatic-0.38/adapters/TruSeq2-SE.fa
+
+#the GEM software, it's to find peak
+Gem: /home/zhan/biosoft/gem/gem
+
+#reference genome directory
+Reference_dir: /disks/wanjiong/dap/reference
+
+#reference genome
+reference: /disks/reference/index/Zea_mays.AGPv4.dna.toplevel.fa
+
+#this file content the length's of genome chromosome
+Chrom_size: /disks/wanjiong/dap/reference/chrom.sizes
+
+#this is the genome index, that is uesd for the bowtie2 alignment
+Index: /disks/reference/index/Zea_mays.AGPv4_index
+
+#that is the genome's annotation, must the gtf format
+Gtf_dir: /disks/reference/annotation/Zea_mays.AGPv4.37.gtf
+
+#the samples fastq file prefix, it must is "Y_2.cleaned_2.fastq.gz" format, "Y" is the sample's name, "2" is the replace's times
+samples: ["AG","AY","GG","GY"]
+
+#the contrals file prefix, it must is "HALO_2.cleaned_2.fastq.gz" format, "HALO" is the contral's name, "2" is the replace
+contrals: ["HALO"]
+
+#the replace times
+reps: ["1","2"]
