@@ -1,3 +1,4 @@
 *.yaml linguist-language=yaml
 Snakemake linguist-language=python
 *.R linguist-language=R
+*.sh linguist-language=shell
