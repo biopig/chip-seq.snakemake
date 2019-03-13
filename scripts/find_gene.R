@@ -1,3 +1,9 @@
+# the sqlite can build follow the example [植物构建txdb对象](https://www.jianshu.com/writer#/notebooks/26834060/notes/37325933)
+#
+#
+#
+
+
 library(ChIPseeker)
 library(GenomicFeatures)
 
