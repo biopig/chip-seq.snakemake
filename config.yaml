@@ -30,6 +30,9 @@ Index: /disks/reference/index/Zea_mays.AGPv4_index
 #that is the genome's annotation, must the gtf format
 Gtf_dir: /disks/reference/annotation/Zea_mays.AGPv4.37.gtf
 
+#
+genome_sqlit: /disks/reference/annotation/maize_v4_2018_11.sqlite
+
 #the samples fastq file prefix, it must is "Y_2.cleaned_2.fastq.gz" format, "Y" is the sample's name, "2" is the replace's times
 samples: ["AG","AY","GG","GY"]
 
