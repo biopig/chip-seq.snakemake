@@ -16,16 +16,16 @@ Truseq_fa: /home/zhan/biosoft/trimmomatic/Trimmomatic-0.38/adapters/TruSeq2-SE.f
 Gem: /home/zhan/biosoft/gem/gem
 
 #reference genome directory
-Reference_dir: /disks/wanjiong/dap/reference
+Reference_dir: /disks/dap_example/reference
 
 #reference genome
-reference: /disks/reference/index/Zea_mays.AGPv4.dna.toplevel.fa
+reference: /disks/dap_example/reference/Zea_mays.B73_RefGen_v4.dna.chromosome.fa
 
 #this file content the length's of genome chromosome
-Chrom_size: /disks/wanjiong/dap/reference/chrom.sizes
+Chrom_size: /disks/dap_example/reference/chrom.sizes
 
 #this is the genome index, that is uesd for the bowtie2 alignment
-Index: /disks/reference/index/Zea_mays.AGPv4_index
+Index: /disks/dap_example/reference/Zea_mays.B73_RefGen_v4.dna_index
 
 #that is the genome's annotation, must the gtf format
 Gtf_dir: /disks/reference/annotation/Zea_mays.AGPv4.37.gtf
@@ -34,7 +34,7 @@ Gtf_dir: /disks/reference/annotation/Zea_mays.AGPv4.37.gtf
 genome_sqlit: /disks/reference/annotation/maize_v4_2018_11.sqlite
 
 #the samples fastq file prefix, it must is "Y_2.cleaned_2.fastq.gz" format, "Y" is the sample's name, "2" is the replace's times
-samples: ["AG","AY","GG","GY"]
+samples: ["AG"]
 
 #the contrals file prefix, it must is "HALO_2.cleaned_2.fastq.gz" format, "HALO" is the contral's name, "2" is the replace
 contrals: ["HALO"]
