@@ -34,7 +34,21 @@ reference目录中，chrom.sizes是染色体和长度的信息，使用tab分割
 ├── Zea_mays.B73_RefGen_v4.dna_index.rev.1.bt2
 └── Zea_mays.B73_RefGen_v4.dna_index.rev.2.bt2
 ```
-最后的结果应该是这样的一种情况
+初始的目录信息如下：
+```
+├── Snakefile
+├── config.yaml
+├── raw_data
+├── reference
+│   └── preparsed
+└── script
+```
+> snakemake -s Snakefile --configfile config.yaml --dag |dot -Tpdf >dag.pdf    #生成拓扑图
+
+> snakemake -s Snakefile --configfile config.yaml -np    #检验一下结构是否有错
+
+> snakemake -s Snakefile --configfile config.yaml    #运行
+运行结束以后，最后的结果：
 ```
 ├── 1_clean_data
 ├── 2_alignment
