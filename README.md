@@ -10,7 +10,7 @@ that is the script of chip-seq analysis use the snakemake workflow
 - [gem](http://groups.csail.mit.edu/cgs/gem/)
 - [homer](http://homer.ucsd.edu/homer/)
 
-安装完软件以后需要下载基因组数据库，并使用bowtie2构建索引
+安装完软件以后需要下载基因组数据库（详细的信息参考reference目录），并使用bowtie2构建索引
 > bowtie2-build reference.fa reference
 
 reference目录中，chrom.sizes是染色体和长度的信息，使用tab分割；还需要各个染色体单独的序列，应该是这样的信息
@@ -40,7 +40,6 @@ reference目录中，chrom.sizes是染色体和长度的信息，使用tab分割
 ├── config.yaml
 ├── raw_data
 ├── reference
-│   └── preparsed
 └── script
 ```
 > snakemake -s Snakefile --configfile config.yaml --dag |dot -Tpdf >dag.pdf    #生成拓扑图
