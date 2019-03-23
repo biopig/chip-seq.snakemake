@@ -1,4 +1,10 @@
 这个目录存放的是**注释信息**
+分别包括：
+- **genome.fa**
+- **genome.gtf**
+- **indival.fa**
+- **chrom.sizes**
+- **genome.sqlit**
 ```
 ├── chr10.fa
 ├── chr1.fa
@@ -25,4 +31,4 @@
 ├── Zea_mays.B73_RefGen_v4.dna_index.rev.1.bt2
 └── Zea_mays.B73_RefGen_v4.dna_index.rev.2.bt2
 ```
-- 同时，你也可以把gtf文件和sqlit文件也放在这里，这样使用起来会比较清楚
+注：因为之前我再分析数据的时候，gtf和sqlit不在这个文件夹中，所以这里没有显示，但是在使用时最好将注释文件都放在一个文件夹中，这样就比较清晰明了了
