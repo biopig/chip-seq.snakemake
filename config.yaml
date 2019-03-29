@@ -15,17 +15,17 @@ Truseq_fa: /home/zhan/biosoft/trimmomatic/Trimmomatic-0.38/adapters/TruSeq2-SE.f
 #the GEM software, it's to find peak
 Gem: /home/zhan/biosoft/gem/gem
 
-#reference genome directory
-Reference_dir: /disks/dap_example/reference
+#reference indival chromosome directory
+Reference_dir: /disks/reference/sequence/indival_fa
 
 #reference genome
-reference: /disks/dap_example/reference/Zea_mays.B73_RefGen_v4.dna.chromosome.fa
+reference: /disks/reference/sequence/genome_fa/Zea_mays.B73_RefGen_v4.dna.chromosome.fa
 
 #this file content the length's of genome chromosome
-Chrom_size: /disks/dap_example/reference/chrom.sizes
+Chrom_size: /disks/reference/annotation/chrom.sizes
 
 #this is the genome index, that is uesd for the bowtie2 alignment
-Index: /disks/dap_example/reference/Zea_mays.B73_RefGen_v4.dna_index
+Index: /disks/reference/index/bowtie2_index/Zea_mays.B73_RefGen_v4.dna_index
 
 #that is the genome's annotation, must the gtf format
 Gtf_dir: /disks/reference/annotation/Zea_mays.AGPv4.37.gtf
