@@ -5,6 +5,8 @@ BiocManager::install("GenomicFeatures", version = "3.8")
 BiocManager::install("biomaRt", version = "3.8")
 library("GenomicFeatures")
 library("biomaRt")
+library("httr")         #in china will get error for the internel
+library("curl")         #in china will get error for the internel
 
 #列出可用的数据库的
 listMarts()
